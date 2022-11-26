@@ -1,4 +1,6 @@
-export function login({ email, password }) {
+
+import { FormValues, User} from '../types/types'
+export function login({ email , password} : FormValues) : Promise<any >{
   return new Promise((resolve) => {
     setTimeout(() => {
       if (email === "elon@mercdev.com" && password === "twitter") {

@@ -1,10 +1,12 @@
 import { useState } from "react";
 import LoginScreen from "./screens/LoginScreen";
 import ProfileScreen from "./screens/ProfileScreen";
-
 import { User} from "./types/types";
 
+import { joinClassNames } from "./utils/joinClassNames";
+
 function App() {
+    const messi: string = joinClassNames(["mainLogo"]);
     const [user, setUser] = useState<User| null>(null);
     console.log(user);
     const handleUser = (user: User | null): void => {
@@ -12,8 +14,8 @@ function App() {
     };
 
     return (
-        <div className="background">
-          <div style={{position:"absolute",top:"32px"}}>
+        <div className={joinClassNames(["background"])}>
+          <div className={joinClassNames(["mainLogo"])}>
 
           <img  src="/Mercury-logotype.png" alt="" />
           </div>

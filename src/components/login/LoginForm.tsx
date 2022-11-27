@@ -11,10 +11,9 @@ import { joinClassNames } from "../../utils/joinClassNames";
 
 interface Props {
     onUser: (user: User | null) => void;
-    user: User | null;
 }
 
-const LoginForm = ({ onUser, user }: Props) => {
+const LoginForm = ({ onUser}: Props) => {
     const [loading, setLoading] = useState(false);
 
     const {

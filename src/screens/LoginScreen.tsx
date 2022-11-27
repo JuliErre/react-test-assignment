@@ -24,7 +24,7 @@ const LoginScreen = ({ onUser, user }: Props) => {
                         Please log in to this form if you wish to pass the exam
                     </p>
                 </div>
-                <LoginForm onUser={onUser} user={user} />
+                <LoginForm onUser={onUser}  />
             </div>
         </>
     );
